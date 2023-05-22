@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link rel="stylesheet"href="ccs26.css">
+<style>
+    /* css REset */
+    body{
+         margin:0px; 
+        color: white;
+         padding:18px; 
+       
+       background: url('cricket ground.webp') ;
+       background-repeat: no-repeat;
+        background-size: cover;  
+       /* min-height: 100%; */
+       /* min-width: 100%; */
+
+    }
+.left{
+    display:inline-block;
+    /* border: 2px solid red; */
+    position:absolute;
+    left:auto;
+    top:22px;
+    border-image-outset: 100%;
+    right: auto;
+}
+.left img{
+    
+    width: 87px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+.left div{
+    text-align: center;
+}
+.right{
+    position:absolute;
+    right:2px;
+    top:47px;
+    display:inline-block;
+    /* border:2px solid yellow;  */
+
+
+}
+.mid{
+    display:block;
+    width:55%;
+    margin:4px auto;
+     /* border:2px solid green; */
+    
+
+}
+.navbar{
+    display:inline-block;
+
+}
+.navbar li{
+    color:white; 
+    display: inline-block;
+    font-size: 25px;
+
+}
+.navbar li a{
+    color:white;
+    text-decoration: none;
+    padding: 34px 24px;
+
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: red;
+}
+
+.btn{
+    margin: 0px 9px;
+    background-color: rgb(223, 235, 179);
+color:azure;
+padding: 4px  14px;
+border:2px solid grey;
+border-radius: 5px;
+font-size: 20px;
+
+cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(20, 17, 17);
+}
+.container{
+    border:2px solid rgb(6, 92, 6);
+    margin: 2px 2px;
+    padding: 2px 2px;
+    width:33%;
+    height: 23%;
+    border-radius: 2px;
+    top: auto;
+    
+}
+.form.group input{
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px; 
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    
+}
+.container h1{
+    text-align: center;
+    -webkit-text-fill-color: rgb(5, 119, 39) ;
+}
+.container button{
+    display: block;
+    width: 73%;
+    margin: auto;
+
+}
+</style>
+<body>
+    <header class ="header">
+        <!-- left box for logo -->
+        <div class ="left">
+            <!-- <img src="C:\Users\HP\Downloads\cricket logo.png"alt=""> -->
+            
+            
+            <div>MS Clube</div>
+        </div>
+
+        <!-- min box navbar -->
+        <div class ="mid">
+            <ul class="navbar">
+                <li><a href="#">Home </a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Clube Information</a></li>
+                <li><a href="#">Contact Us</a></li>
+            
+            
+            
+            </ul>        </div>
+        <!-- Right box for navbar -->
+        <div class ="right">
+    <button class="btn">call us</button><button class="btn">What"sApp Number</button>
+        </div>
+    </header>
+   <div class="container">
+    <h1>Join The MS Clube of kashti Now </h1>
+    <form action="add.php">>
+        <div class="from.group">
+            <input type="text"name=""placeholder="enter your name">
+        </div>
+        <div class="from.group">
+            <input type="number"name=""placeholder="enter your Age">
+        </div>
+        <div class="from.group">
+            <input type="text"name=""placeholder="enter your address">
+        </div>
+        <div class="from.group">
+            <input type="text"name=""placeholder="enter your name">
+        </div>
+
+        <button class ="btn">Submit</button>
+    </form>
+   </div>
+    
+</body>
+</html>
